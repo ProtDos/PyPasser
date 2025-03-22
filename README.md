@@ -25,7 +25,7 @@ pip install PyPasser --upgrade
 ### Install from Github (latest repo code)
 
 ```
-pip install git+https://github.com/xHossein/PyPasser@master
+pip install git+https://github.com/ProtDos/PyPasser@master
 ```
 
 &nbsp;
@@ -55,6 +55,26 @@ from pypasser import reCaptchaV3
 
 reCaptcha_response = reCaptchaV3('ANCHOR URL')
 ## use this response in your request ...
+```
+
+
+&nbsp;
+
+## Async 
+
+&nbsp;
+
+```python
+from pypasser import AsyncReCaptchaV3
+import asyncio
+
+async def main():
+  solver = AsyncReCaptchaV3('ANCHOR URL')
+  reCaptcha_response = await solver.solve()
+  ## use this response in your request ...
+
+if __name__ == "__main__":
+  asyncio.run(main())
 ```
 
 Some good examples are [here](https://github.com/xHossein/PyPasser/tree/master/examples/reCaptchaV3).
