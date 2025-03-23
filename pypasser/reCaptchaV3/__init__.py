@@ -1,5 +1,5 @@
 from pypasser.exceptions import RecaptchaTokenNotFound, RecaptchaResponseNotFound
-from pypasser.session import Session, AsyncSession
+from pypasser.session import Session
 from pypasser.structs import Proxy
 from pypasser.utils import parse_url
 from .constants import POST_DATA, BASE_URL, BASE_HEADERS
